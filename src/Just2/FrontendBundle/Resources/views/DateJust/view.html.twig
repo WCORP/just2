@@ -1,0 +1,15 @@
+{# empty Twig template #}
+
+
+{{date.member}}
+{{date.ocassion.name}}
+{{date.minprice}}
+
+<form action="{{ path('bid_create_for_user') }}" method="post" {{ form_enctype(formbid) }}>
+
+    Bid          {{ form_widget(formbid.price, { 'attr': {'placeholder' : 'Type your Bid'} }) }}
+{{ form_widget(formbid.dateJust, { 'attr': {'placeholder' : 'Type your Bid'} }) }}
+{{ form_rest(formbid) }}
+    <button class="button blue" type="submit"><span class="glyph inbox"></span>Bid</button>
+
+</form>

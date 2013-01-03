@@ -1,0 +1,4 @@
+## YAML Template.
+bid_create_for_user:
+    pattern:  /bid/create
+    defaults: { _controller: Just2FrontendBundle:Bid:bid }
